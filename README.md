@@ -1,5 +1,5 @@
 # css-scheme
-Structuring CSS with scheme, it produces no side effects and does not modify any external state.
+Structuring CSS with scheme, it produces **no side effects** and does not modify any external state.
 e.g.
 ```scheme
 (display
