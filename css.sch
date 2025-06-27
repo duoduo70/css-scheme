@@ -71,11 +71,10 @@
         (css-body->string body))))
 
   (define (css-transform . items)
-    (call/cc (lambda (err-break)
-              (apply string-append
-                (map
-                  (lambda (item) (css-item->string item))
-                  items)))))
+    (apply string-append
+      (map
+        (lambda (item) (css-item->string item))
+        items))))
 
   (define-syntax css
     (syntax-rules ()
